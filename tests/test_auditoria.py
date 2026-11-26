@@ -3,7 +3,7 @@ from auditoria import extraer_hostname, obtener_interfaces_up, generar_reporte
 
 def test_extraer_hostname():
     configuracion = "version 17.9\nhostname ROUTER-ALUMNO\n!"
-    assert extraer_hostname(configuracion) == "ROUTER-INCORRECTO"
+    assert extraer_hostname(configuracion) == "ROUTER-ALUMNO"
 
 
 def test_hostname_no_definido():
